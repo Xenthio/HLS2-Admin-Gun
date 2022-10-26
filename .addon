@@ -1,0 +1,19 @@
+{
+  "Title": "Admin Gun!",
+  "Type": "addon",
+  "Org": "xenthio",
+  "Ident": "cooladdon",
+  "Tags": "",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": [
+    "/ui/*"
+  ],
+  "HasCode": true,
+  "CodePath": "/code/",
+  "RootNamespace": null,
+  "Metadata": {
+    "ParentPackage": "shishkabob.hls2"
+  }
+}
