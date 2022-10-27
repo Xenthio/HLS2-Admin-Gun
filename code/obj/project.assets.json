@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "base/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/base.dll": {}
+        }
+      },
+      "hls2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/hls2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/hls2.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "base/1.0.0": {
+      "type": "project",
+      "path": "../../../SteamLibrary/steamapps/common/sbox/addons/base/code/base.csproj",
+      "msbuildProject": "../../../SteamLibrary/steamapps/common/sbox/addons/base/code/base.csproj"
+    },
+    "hls2/1.0.0": {
+      "type": "project",
+      "path": "../../hls2/code/hls2.csproj",
+      "msbuildProject": "../../hls2/code/hls2.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "hls2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\thego\\.nuget\\packages\\": {}
@@ -13,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\s&box addons\\cooladdon\\code\\cooladdon.csproj",
+      "projectUniqueName": "E:\\S&box Addons\\admingun\\code\\cooladdon.csproj",
       "projectName": "cooladdon",
-      "projectPath": "e:\\s&box addons\\cooladdon\\code\\cooladdon.csproj",
+      "projectPath": "E:\\S&box Addons\\admingun\\code\\cooladdon.csproj",
       "packagesPath": "C:\\Users\\thego\\.nuget\\packages\\",
-      "outputPath": "e:\\s&box addons\\cooladdon\\code\\obj\\",
+      "outputPath": "E:\\S&box Addons\\admingun\\code\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thego\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +70,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\S&box Addons\\hls2\\code\\hls2.csproj": {
+              "projectPath": "E:\\S&box Addons\\hls2\\code\\hls2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

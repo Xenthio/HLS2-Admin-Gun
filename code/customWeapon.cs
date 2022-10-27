@@ -1,5 +1,5 @@
 ﻿using Sandbox;
-class CoolGun : HLWeapon
+class CoolGun : Weapon
 {
     public override string InventoryIcon => "/ui/admingun.png";
     public override string InventoryIconSelected => "/ui/admingun.png";

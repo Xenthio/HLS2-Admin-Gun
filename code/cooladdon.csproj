@@ -45,7 +45,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-		<Reference Include="E:\SteamLibrary\steamapps\common\sbox\.source2\references\shishkabob.hls2.0.dll" />
+		<ProjectReference Include="E:\S&amp;box Addons\hls2\\code\\hls2.csproj" />
 
   </ItemGroup>
 
